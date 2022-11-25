@@ -14,7 +14,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:backgroundTint="#BABABA"
-        android:onClick="Validar"
         app:icon="@drawable/ic_buscar"
         app:iconTint="#090000"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +39,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#FFFFFF"
-            android:hint="Titúlo" />
+            android:hint="Titúlo"
+            android:maxLength="20"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
