@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btnBuscar"
+        android:id="@+id/btnSearch"
         android:layout_width="50dp"
         android:layout_height="60dp"
         android:layout_marginStart="16dp"
@@ -16,6 +16,8 @@
         android:backgroundTint="#BABABA"
         app:icon="@drawable/ic_buscar"
         app:iconTint="#090000"
+        app:layout_constraintBottom_toTopOf="@+id/tilDescr"
+        app:layout_constraintEnd_toStartOf="@+id/tilTitulo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,38 +32,34 @@
         android:backgroundTint="#FFFFFF"
         app:counterEnabled="true"
         app:counterMaxLength="20"
+        android:hint="Título Tarea"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/btnBuscar"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etTitulo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:backgroundTint="#FFFFFF"
-            android:hint="Titúlo"
-            android:maxLength="20"/>
+            android:backgroundTint="#FFFFFF"/>
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/tilDescripcion"
+        android:id="@+id/tilDescr"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
         android:backgroundTint="#FFFFFF"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Descripción"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tilTitulo">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etDescripcion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#FFFFFF"
-            android:hint="Descripción" />
-    </com.google.android.material.textfield.TextInputLayout>
+           />
+        </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnIngresar"
@@ -74,10 +72,10 @@
         android:textColor="#000000"
         android:textColorHint="#000000"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilDescripcion" />
+        app:layout_constraintTop_toBottomOf="@+id/tilDescr" />
 
     <Button
-        android:id="@+id/btnModificar"
+        android:id="@+id/btnMod"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -86,7 +84,7 @@
         android:text="MODIFICAR"
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tilDescripcion"
+        app:layout_constraintTop_toBottomOf="@+id/tilDescr"
         app:rippleColor="#FFFFFF" />
 
 

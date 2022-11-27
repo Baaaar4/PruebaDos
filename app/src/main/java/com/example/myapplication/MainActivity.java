@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.EditText;
 import android.widget.Toast;
 
@@ -21,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
 
     //referencias
-    Button buscar, ingresar;
-    EditText etTitulo,etDescripcion;
-
-    static ArrayList<Tareas> tareas = new ArrayList<>();
+    private TextInputLayout tilTitulo, tilDescripcion;
+    private Button btnSearch, btnIngr, btnMod;
+    private ArrayList<Tareas> tareas = new ArrayList<>();
+    public int c= 0;
 
 
     @Override
